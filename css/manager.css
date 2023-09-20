@@ -1,0 +1,203 @@
+/* 0. General */
+.primary-color {
+  color: #ff4757;
+}
+
+/* 1. Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+}
+
+.header__item {
+  min-width: 80px;
+  padding: 16px 20px 11px 20px;
+  color: #ff6b81;
+  border-radius: 5px;
+  border-bottom: 5px solid transparent;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.header__item:hover {
+  color: #ff4757;
+  text-decoration: none;
+  opacity: 1;
+  background-color: rgba(194, 53, 100, 0.05);
+  border-color: rgba(255, 71, 87, 0.2);
+}
+
+.header__item.active {
+  color: #ff4757;
+  opacity: 1;
+  border-color: #ff4757;
+  background-color: rgba(194, 53, 100, 0.05);
+}
+
+/* 2. Content */
+.content {
+  margin-top: 56px;
+  background-color: #f1f2f6;
+  min-height: calc(100vh - 113px);
+}
+
+/* 3. Footer */
+.footer {
+  background-color: #ff4757;
+  color: white;
+}
+
+/* 4. Login */
+.main-content {
+  width: 80%;
+  min-height: 400px;
+  border-radius: 20px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+.company__info {
+  background-color: #ff4757;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  color: white;
+}
+
+.row > h2 {
+  color: #ff4757;
+}
+
+.login_form {
+  background-color: white;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.form__input {
+  width: 100%;
+  border-radius: 0;
+  border: 1px solid rgb(206, 206, 206);
+  outline: none;
+  transition: all 0.5s ease;
+  border-radius: 30px;
+}
+
+.form__input:focus {
+  border: 1px solid #ff4757;
+  border-radius: 30px;
+}
+
+.btn__login {
+  transition: all 0.5s ease;
+  width: 100%;
+  border-radius: 30px;
+  color: #ff4757;
+  font-weight: 600;
+  background-color: white;
+  border: 1px solid #ff4757;
+}
+
+.btn__login:hover,
+.btn__login:focus {
+  background-color: #ff4757;
+  color: #fff;
+}
+
+/* 5. Dashboard */
+.dashboard-link:hover {
+  text-decoration: none;
+  opacity: 0.9;
+}
+
+.dashboard {
+  background-color: #ff4757;
+  min-height: 400px;
+  color: white;
+  border-radius: 30px;
+}
+
+/* 6. Interior */
+.add-_content {
+  width: 100%;
+}
+
+/* ***** Responsive ***** */
+/* 1. tablet and mobile */
+@media (max-width: 1023px) {
+}
+
+/* 2. tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+  .header__item {
+    padding: 16px 6px 11px;
+  }
+
+  .responsive__operation {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: right;
+  }
+
+  .mtop-10 {
+    margin-top: 10px;
+  }
+
+  .tablet__none {
+    display: none !important;
+  }
+}
+
+/* 3. mobile */
+@media (max-width: 739px) {
+  .header__item {
+    padding: 4px 6px;
+  }
+
+  .btn__mobile {
+    width: 100% !important;
+  }
+
+  .company__info {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 0;
+  }
+
+  .login_form {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+  }
+
+  .company__logo > h2 > i {
+    font-size: 30px !important;
+    margin-top: 10px;
+  }
+
+  .mobile__label {
+    text-align: left !important;
+    margin-left: 0 !important;
+  }
+
+  .mobile__content {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+
+  .mobile__none {
+    display: none !important;
+  }
+
+  .responsive__operation {
+    margin-top: 10px;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    text-align: right;
+  }
+
+  .mobile__login {
+    margin-left: 6px !important;
+    margin-right: 0 !important;
+  }
+}
